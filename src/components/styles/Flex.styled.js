@@ -11,6 +11,10 @@ align-item:center;
     flex:1;
 }
 
+@media(max-width: ${({theme}) => theme.mobile}){
+    flex-direction: column;
+}
+
 `
 
 // any direct div or ul will set the flex to 1
