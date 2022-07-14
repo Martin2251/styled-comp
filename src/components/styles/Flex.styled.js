@@ -13,7 +13,8 @@ align-item:center;
 
 @media(max-width: ${({theme}) => theme.mobile}){
     flex-direction: column;
-}
+    text-align:center;
+} 
 
 `
 
