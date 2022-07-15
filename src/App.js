@@ -1,5 +1,7 @@
 import {Container} from "./components/styles/Container.styled"
 import Header from "./components/Header";
+import Card from "./components/Card";
+
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from "./components/styles/Global";
 import content from "./content";
@@ -21,7 +23,7 @@ function App() {
       <Header  />
       <Container>
      {content.map((item,index) =>
-     <p>{item.title}</p>
+     <Card key={index} item={item}  />
      )}
       </Container>
       </>
