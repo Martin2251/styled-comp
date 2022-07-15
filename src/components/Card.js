@@ -1,8 +1,9 @@
 import React from "react";
+import {StyledCard} from "./styles/Card.Styled"
 
 function Card({ item: { id, title, body, image } }) {
   return (
-    <div>
+    <StyledCard>
       <div>
         <h2>{title}</h2>
         <p>{body}</p>
@@ -11,7 +12,7 @@ function Card({ item: { id, title, body, image } }) {
       <div>
           <img src={`./images/${image}`} alt=""  />
       </div>
-    </div>
+    </StyledCard>
   );
 }
 
